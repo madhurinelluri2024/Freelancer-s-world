@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./accepting.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freelancer World</title>
+  <style>
+    body {
+      background-color: #F2E6DF;
+      text-align: center;
+    }
+    h1 {
+      font-family: Orpheus, sans-serif;
+      font-style: italic;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column; /* Arrange items vertically */
+    }
+    button {
+      background-color: #4b7fb3;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button a {
+      color: black;
+      text-decoration: none;
+    }
+    #freelancerImage {
+      max-width: 200px; /* Adjust the width as needed */
+      margin-top: 20px; /* Add space between buttons and image */
+    }
+  </style>
+</head>
+<body>
+  <h1>Freelancer's World</h1>
+  <div class="container">
+    <div>
+      <button id="acceptOrder">
+        <a href="./profile.html">Freelancer</a>
+      </button>
+      <button id="completeOrder">
+        <a href="./placing_order.html">User Profile</a>
+      </button>
+    </div>
+    <img src="freelancer_image.jpg" alt="Freelancer Image" id="freelancerImage">
+  </div>
+  <script src="acceptingOrderScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- Freelancer Profile Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="profile.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freelancer Profile</title>
+</head>
+<body id="body">
+    <h1 id="h1">Freelancer Profile</h1>
+    <form id="profileForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" /><br /><br />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" /><br /><br />
+
+        <label for="areaOfExpertise">Area of Expertise:</label>
+        <select id="areaOfExpertise" name="areaOfExpertise">
+            <option value="Java">Java</option>
+            <option value=".NET">.NET</option>
+            <option value="PowerBI">PowerBI</option>
+            <option value="Database Management">Database Management</option>
+        </select><br /><br />
+
+        <label for="yearsOfExperience">Years of Experience:</label>
+        <input
+            type="number"
+            id="yearsOfExperience"
+            name="yearsOfExperience"
+        /><br /><br />
+        <button id="submitBtn" type="button" onclick="redirectToAcceptPage()">Create Profile</button>
+    </form>
+
+    <!-- Script for form submission -->
+    <script src="profileScript.js"></script>
+
+    <!-- Script to redirect to acceptance page -->
+    <script>
+        function redirectToAcceptPage() {
+            window.location.href = 'acceptingOrder.html';
+        }
+    </script>
+</body>
+</html>
+
+
+ <!-- <a href="./acceptingOrder.html">Create Profile</a> -->
+
+ <!-- <script src="placing_order.js"></script> -->
+ <!-- <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script> -->
